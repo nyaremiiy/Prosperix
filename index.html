@@ -6,14 +6,19 @@
     <title>PROSPERIX</title>
   </head>
   <body>
-    <header class="header">
+    <header
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="./partials/global.header.partial.html"
+    ></header>
+    <!-- <header class="header">
       <div class="header__container container">
-        <div class="header-logo">
-          <a href="" class="logo logo--dark">
+        <div class="header__logo">
+          <a href="#" class="logo">
             <img
-              src="./images/logo/Prosperix-min.svg"
-              alt="Dark logo Prosperix"
-              class="logo__img"
+              class="logo__image"
+              src="./images/logo/prosperix-logo-dark-min.svg"
+              alt="Prosperix logo dark"
             />
           </a>
         </div>
@@ -35,12 +40,12 @@
           <a href="#" class="button-link button-link--green">Sign in</a>
           <a
             href="#"
-            class="button button__link button-link--small button-link--primary"
+            class="button-link button-link--small button-link--primary"
             >Get Started</a
           >
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="hero__container container">
@@ -125,7 +130,7 @@
         <div class="our-expertise__container container">
           <div class="our-expertise__content">
             <div class="subtitle">OUR EXPERTISE</div>
-            <h2 class="title title-h2">
+            <h2 class="title title--h2">
               Transforming Finances With Strategic Wealth Management
             </h2>
             <div class="our-expertise__text-box">
@@ -160,7 +165,7 @@
         <div class="our-services__container container">
           <div class="our-services__content">
             <div class="subtitle">our services</div>
-            <h3 class="title title-h2">
+            <h3 class="title title--h2">
               Our Services Can Help You Grow Your Investments and Wealth
             </h3>
             <div class="our-services__text-box">
@@ -226,7 +231,7 @@
       <section class="testimonials">
         <div class="testimonials__container container">
           <div class="subtitle">testimonials</div>
-          <h3 class="title title-h2">What Our Customers Say</h3>
+          <h3 class="title title--h2">What Our Customers Say</h3>
           <div class="testimonials__text-box">
             <p class="text">
               Discover the Success Stories and Satisfaction of Clients Who Have
@@ -349,14 +354,127 @@
         <div class="cta__container container">
           <div class="cta__banner">
             <div class="cta__content">
-
+              <div class="subtitle subtitle--secondary">Start now</div>
+              <h2 class="title title--h2 title--white">
+                Get Start For Free No Credit Card Required
+              </h2>
+              <form class="cat__email-form">
+                <button type="submit">Get Started</button>
+              </form>
             </div>
             <div class="cta__image-box">
-              <img src="./images/cta/cta-banner.png" alt="Cta banner">
+              <input type="email" placeholder="Email address" />
+              <img src="./images/cta/cta-banner.png" alt="Cta banner" />
             </div>
+            <p class="text">
+              Want to contact our team and book a call? Try it now
+            </p>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top-bar">
+          <div class="footer__info">
+            <div class="footer-logo">
+              <a href="#" class="logo logo--light">
+                <svg
+                  class="logo__img"
+                  width="158"
+                  height="34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.594 27a1 1 0 0 1-1-1V3.273a1 1 0 0 1 1-1h9.673c1.835 0 3.441.362 4.817 1.086 1.377.725 2.448 1.743 3.212 3.055.765 1.312 1.147 2.845 1.147 4.6 0 1.771-.394 3.304-1.183 4.6-.78 1.296-1.88 2.294-3.296 2.995-1.409.7-3.055 1.05-4.938 1.05H5.65a1 1 0 0 1-1-1v-3.216a1 1 0 0 1 1-1h4.022c.79 0 1.461-.137 2.017-.41.563-.282.994-.68 1.292-1.196.305-.515.458-1.123.458-1.823 0-.708-.153-1.312-.458-1.81a2.878 2.878 0 0 0-1.292-1.16c-.556-.274-1.228-.41-2.017-.41H8.307a1 1 0 0 0-1 1V26a1 1 0 0 1-1 1H1.594zM23.323 27a1 1 0 0 1-1-1V9.455a1 1 0 0 1 1-1h4.471a1 1 0 0 1 1 1v2.416a.109.109 0 0 0 .215.027c.34-1.262.867-2.188 1.584-2.78.741-.603 1.606-.905 2.596-.905.29 0 .576.024.858.073l.11.016c.435.069.723.466.723.907v3.697c0 .611-.612 1.065-1.22.994a10.954 10.954 0 0 0-1.243-.085 3.5 3.5 0 0 0-1.763.447c-.515.29-.922.7-1.22 1.232-.297.523-.446 1.139-.446 1.847V26a1 1 0 0 1-1 1h-4.665zM44.257 27.338c-2.012 0-3.735-.398-5.167-1.195a8.22 8.22 0 0 1-3.297-3.357c-.764-1.44-1.147-3.11-1.147-5.01s.383-3.566 1.147-4.999A8.125 8.125 0 0 1 39.09 9.42c1.432-.804 3.155-1.207 5.167-1.207 2.013 0 3.735.403 5.168 1.207a8.125 8.125 0 0 1 3.296 3.357c.765 1.433 1.147 3.099 1.147 4.999 0 1.9-.382 3.57-1.147 5.01a8.22 8.22 0 0 1-3.296 3.357c-1.433.797-3.155 1.195-5.168 1.195zm.049-4.926c.563 0 1.05-.19 1.46-.567.41-.379.729-.918.954-1.618.226-.7.338-1.534.338-2.5 0-.974-.112-1.807-.338-2.499-.225-.7-.543-1.24-.954-1.618a2.083 2.083 0 0 0-1.46-.567c-.596 0-1.107.189-1.534.567-.426.378-.752.918-.978 1.618-.225.692-.338 1.525-.338 2.5 0 .965.113 1.798.338 2.499.226.7.552 1.24.978 1.617.427.379.938.568 1.534.568zM72.726 13.457c.108.558-.355 1.034-.924 1.034H67.63c-.52 0-.922-.43-1.221-.855a1.695 1.695 0 0 0-.096-.122 2.234 2.234 0 0 0-.905-.628 3.073 3.073 0 0 0-1.208-.23c-.571 0-1.062.105-1.473.314-.41.21-.611.507-.603.894-.008.273.108.527.35.76.25.234.728.415 1.437.544l3.767.676c1.9.346 3.312.93 4.237 1.75.934.813 1.405 1.904 1.413 3.272-.008 1.32-.402 2.468-1.183 3.442-.773.965-1.831 1.714-3.175 2.245-1.337.523-2.862.785-4.576.785-2.834 0-5.051-.58-6.653-1.739-1.279-.93-2.104-2.097-2.476-3.503-.15-.571.32-1.085.91-1.085h4.653c.495 0 .886.387 1.157.801.144.22.335.407.573.564.5.314 1.127.47 1.884.47.612 0 1.115-.104 1.51-.313.402-.21.607-.507.615-.894-.008-.354-.185-.636-.531-.845-.338-.21-.87-.378-1.594-.507l-3.284-.58c-1.892-.33-3.308-.957-4.25-1.883-.942-.926-1.409-2.117-1.4-3.574-.009-1.288.33-2.379 1.013-3.272.693-.902 1.679-1.586 2.958-2.053 1.288-.474 2.814-.712 4.577-.712 2.68 0 4.793.555 6.338 1.666 1.27.908 2.047 2.1 2.333 3.578zM76.2 33.955a1 1 0 0 1-1-1v-23.5a1 1 0 0 1 1-1h4.617a1 1 0 0 1 1 1v2.15c0 .047.039.085.086.085a.087.087 0 0 0 .08-.055 5.605 5.605 0 0 1 1.042-1.671 5.06 5.06 0 0 1 1.738-1.268c.692-.322 1.497-.483 2.415-.483 1.224 0 2.387.326 3.49.978 1.11.652 2.012 1.678 2.704 3.079.7 1.4 1.05 3.22 1.05 5.457 0 2.141-.334 3.916-1.002 5.325-.66 1.409-1.545 2.459-2.656 3.151a6.7 6.7 0 0 1-3.634 1.038c-.87 0-1.646-.14-2.33-.422a5.381 5.381 0 0 1-1.74-1.171 5.413 5.413 0 0 1-1.083-1.655.058.058 0 0 0-.111.022v8.94a1 1 0 0 1-1 1H76.2zm5.52-16.228c0 .902.117 1.683.35 2.343.242.652.58 1.159 1.015 1.52.443.355.97.532 1.582.532.611 0 1.13-.173 1.557-.519.435-.354.765-.857.99-1.51.234-.66.35-1.448.35-2.366 0-.917-.116-1.702-.35-2.354-.225-.66-.555-1.163-.99-1.51-.426-.354-.946-.53-1.557-.53-.612 0-1.14.176-1.582.53-.435.347-.773.85-1.014 1.51-.234.652-.35 1.437-.35 2.354zM105.421 27.338c-1.98 0-3.687-.378-5.119-1.135a7.95 7.95 0 0 1-3.297-3.284c-.764-1.433-1.147-3.147-1.147-5.143 0-1.916.387-3.59 1.16-5.023a8.286 8.286 0 0 1 3.271-3.345c1.409-.796 3.071-1.195 4.987-1.195 1.401 0 2.668.217 3.803.652a7.968 7.968 0 0 1 2.91 1.896c.805.82 1.425 1.819 1.859 2.994.435 1.175.652 2.5.652 3.972v.546a1 1 0 0 1-1 1H98.935a1 1 0 0 1-1-1v-1.67a1 1 0 0 1 1-1h8.417c.558 0 1.034-.475.821-.991a2.386 2.386 0 0 0-.217-.41 2.608 2.608 0 0 0-1.05-.954 3.09 3.09 0 0 0-1.485-.35c-.539 0-1.034.116-1.485.35-.451.225-.813.54-1.087.942-.266.402-.406.873-.422 1.412v3.96c0 .596.124 1.127.374 1.594.249.467.608.833 1.074 1.099.467.266 1.031.398 1.691.398a3.87 3.87 0 0 0 1.255-.193c.387-.129.717-.314.99-.555a2.3 2.3 0 0 0 .268-.289c.257-.33.613-.605 1.031-.605h4.215c.616 0 1.091.556.901 1.142a6.737 6.737 0 0 1-1.211 2.215c-.78.942-1.815 1.674-3.103 2.197-1.28.515-2.777.773-4.491.773zM117.54 27a1 1 0 0 1-1-1V9.455a1 1 0 0 1 1-1h4.472a1 1 0 0 1 1 1v2.416a.108.108 0 0 0 .214.027c.339-1.262.868-2.188 1.585-2.78.74-.603 1.605-.905 2.596-.905.289 0 .575.024.857.073l.11.016c.435.069.723.466.723.907v3.697c0 .611-.612 1.065-1.22.994a10.946 10.946 0 0 0-1.243-.085 3.5 3.5 0 0 0-1.763.447c-.515.29-.922.7-1.219 1.232-.298.523-.447 1.139-.447 1.847V26a1 1 0 0 1-1 1h-4.665zM131.602 27a1 1 0 0 1-1-1V9.455a1 1 0 0 1 1-1h4.665a1 1 0 0 1 1 1V26a1 1 0 0 1-1 1h-4.665zM134 6h-2.35a1 1 0 0 1-.999-1V1.437c0-.552.447-1 .999-1h4.569a1 1 0 0 1 1 1V3.48c0 .397.011.984.022 1.491A1.004 1.004 0 0 1 136.238 6H134zM145.095 8.455a1 1 0 0 1 .905.574l1.553 3.3a1 1 0 0 0 1.801.018l1.654-3.337a1 1 0 0 1 .896-.555h4.325a1 1 0 0 1 .881 1.472l-3.924 7.316c-.162.302-.158.665.009.963l4.109 7.304a1 1 0 0 1-.872 1.49h-4.258a1 1 0 0 1-.883-.53l-1.96-3.68a1 1 0 0 0-1.771.012l-1.889 3.657a.999.999 0 0 1-.888.541h-4.338a1 1 0 0 1-.87-1.494l4.145-7.301c.169-.297.174-.66.014-.963l-3.888-7.318a1 1 0 0 1 .883-1.47h4.366z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="footer__text">
+              Our expert financial consultants provide solutions to help you
+              achieve financial wealth. Trust us to guide you toward a brighter
+              financial future.
+            </p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/socials/f-icon-min.svg"
+                    alt="Facebook icon"
+                  />
+                  <span>facebook</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/socials/t-icon-min.svg"
+                    alt="Twitter icon"
+                  />
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    src="./images/socials/i-icon-min.svg"
+                    alt="Instagram icon"
+                  />
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <div class="footer__column">
+              <h3 class="footer__title">Our Services</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">Insurance Planning</a>
+                  <a href="#" class="footer__list-link">Estate Planning</a>
+                  <a href="#" class="footer__list-link">Tax Optimization</a>
+                  <a href="#" class="footer__list-link">Debt Management</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">Explore More</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">About us</a>
+                  <a href="#" class="footer__list-link">Blog</a>
+                  <a href="#" class="footer__list-link">Site map</a>
+                  <a href="#" class="footer__list-link">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">Contact Details</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">contact@briofin.com</a>
+                  <a href="#" class="footer__list-link">+1 (555) 123-4567</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom-bar">
+          <span href="#" class="footer__copy"
+            >DSCODE 2023 © All rights reserved</span
+          >
+          <a href="#" class="footer__term">Terms & Conditions</a>
+          <a href="#" class="footer__policy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
